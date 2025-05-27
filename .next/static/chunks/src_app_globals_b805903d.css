@@ -2,6 +2,7 @@
 @import "https://geists.vercel.app/font.css";
 @import "https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&display=swap";
 @import "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css";
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap";
 /* [project]/src/app/globals.css [app-client] (css) */
 *, :before, :after {
   box-sizing: border-box;
@@ -247,6 +248,10 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -263,20 +268,24 @@ img, video {
   position: sticky;
 }
 
-.bottom-2 {
-  bottom: .5rem;
+.inset-0 {
+  inset: 0;
 }
 
-.top-0 {
-  top: 0;
+.-left-\[15\%\] {
+  left: -15%;
+}
+
+.-top-24 {
+  top: -6rem;
 }
 
 .bottom-0 {
   bottom: 0;
 }
 
-.bottom-8 {
-  bottom: 2rem;
+.bottom-4 {
+  bottom: 1rem;
 }
 
 .left-1\/2 {
@@ -287,24 +296,16 @@ img, video {
   left: 48%;
 }
 
-.left-\[49\%\] {
-  left: 49%;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .right-4 {
   right: 1rem;
 }
 
-.left-\[46\%\] {
-  left: 46%;
+.top-0 {
+  top: 0;
 }
 
-.left-\[47\%\] {
-  left: 47%;
+.top-\[46\%\] {
+  top: 46%;
 }
 
 .z-0 {
@@ -319,20 +320,28 @@ img, video {
   z-index: 50;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.ml-auto {
+  margin-left: auto;
 }
 
-.mt-2 {
-  margin-top: .5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
   display: flex;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-\[2400px\] {
@@ -343,96 +352,36 @@ img, video {
   height: 400px;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-2 {
-  height: .5rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-screen {
+  height: 100vh;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-2 {
-  width: .5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-\[50px\] {
-  width: 50px;
+.w-16 {
+  width: 4rem;
 }
 
 .w-6 {
   width: 1.5rem;
 }
 
-.w-12 {
-  width: 3rem;
+.w-\[50px\] {
+  width: 50px;
 }
 
-.w-24 {
-  width: 6rem;
+.w-full {
+  width: 100%;
 }
 
-.w-14 {
-  width: 3.5rem;
+.w-screen {
+  width: 100vw;
 }
 
-.w-16 {
-  width: 4rem;
+.min-w-\[1400px\] {
+  min-width: 1400px;
 }
 
 .max-w-\[1400px\] {
@@ -449,29 +398,13 @@ img, video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-1\/4 {
-  --tw-translate-x: -25%;
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes bounce {
-  0%, 100% {
-    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
-    transform: translateY(-25%);
-  }
-
-  50% {
-    animation-timing-function: cubic-bezier(0, 0, .2, 1);
-    transform: none;
-  }
-}
-
-.animate-bounce {
-  animation: 1s infinite bounce;
 }
 
 .flex-col {
@@ -486,24 +419,12 @@ img, video {
   justify-content: center;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-3 {
   gap: .75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-2 {
-  gap: .5rem;
-}
-
-.gap-y-1 {
-  row-gap: .25rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .rounded-full {
@@ -551,21 +472,8 @@ img, video {
   padding-bottom: .25rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .font-blinker {
   font-family: Blinker, sans-serif;
-}
-
-.font-noto {
-  font-family: Noto Sans KR, sans-serif;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-8xl {
@@ -573,8 +481,8 @@ img, video {
   line-height: 1;
 }
 
-.font-normal {
-  font-weight: 400;
+.text-\[46px\] {
+  font-size: 46px;
 }
 
 .font-semibold {
@@ -597,19 +505,108 @@ img, video {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
+.duration-300 {
+  transition-duration: .3s;
+}
+
 .duration-500 {
   transition-duration: .5s;
 }
 
 :root {
-  --background: #232323;
+  --background: #f3f4f6;
 }
 
 body {
   background-color: var(--background);
-  font-family: "Noto Sans KR", "Pretendard", "Blinker" "Geist";
-  background-image: url("/image/background.jpg");
-  background-size: cover;
+  font-family: "IBM Plex Sans KR", "Pretendard", "Blinker" "Geist";
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes center-to-up {
+  0% {
+    position: fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    position: fixed;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, calc(-46% - 190px));
+  }
+}
+
+@keyframes fadein-up-under {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    transform: translateY(-25%);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    transform: none;
+  }
+}
+
+.fadein {
+  opacity: 0;
+  animation: 2s forwards fadein;
+}
+
+.fadein-up {
+  opacity: 0;
+  animation: .8s ease-in-out 1s forwards fadein-up;
+}
+
+.fadein-delay, .fadein-bg {
+  opacity: 0;
+  animation: 2s 3s forwards fadein;
+}
+
+.fadein-profile {
+  opacity: 0;
+  animation: 1s 3s forwards fadein;
+}
+
+.center-to-up {
+  animation: 1.5s ease-in-out 3s forwards center-to-up;
+}
+
+.fadein-bounce {
+  opacity: 0;
+  animation: 3s 3s forwards fadein-up, .7s infinite bounce;
 }
 
 .hover\:bg-black:hover {

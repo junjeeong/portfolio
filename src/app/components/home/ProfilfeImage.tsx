@@ -4,8 +4,8 @@ const JeongJunyeong = () => {
   return (
     <Image
       src={"/image/정준영_흑백1.png"}
-      width={400}
-      height={700}
+      width={450}
+      height={800}
       alt="정준영 이미지"
     />
   );

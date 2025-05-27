@@ -1,12 +1,12 @@
 const Title = () => {
   return (
-    <div className="flex flex-col justify-center mx-w-[1200px] h-[400px] w-screen text-center">
-      <h2 className="text-8xl font-blinker font-semibold text-white">
-        No UX, No business value
-        <p className="font-normal text-5xl font-noto text-black mb-4">
-          프론트엔드 개발자{" "}
-          <span className="text-black font-semibold">정준영</span>입니다.
-        </p>
+    <div className="absolute top-[46%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center w-full h-[400px] items-center center-to-up mt-5">
+      <h2 className="relative text-[46px] text-black fadein">
+        프론트엔드 개발자 <strong>정준영</strong>
+        입니다.
+        <span className="min-w-[1400px] absolute -top-24 -left-[15%] text-8xl font-blinker font-semibold text-white fadein-up">
+          No UX, No business
+        </span>
       </h2>
     </div>
   );
