@@ -1,0 +1,30 @@
+"use client";
+
+import { useState } from "react";
+import GoResumeButton from "@/app/components/home/GoResumeButton";
+import Memoji from "@/app/components/ui/Memoji";
+
+const IntroBadge = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const openResume = () => {
+    window.open(
+      "https://woolen-scissor-0a1.notion.site/junjeong-1ff200834c4a807e9896c084531c542f",
+      "_blank"
+    );
+  };
+
+  const handleHover = (ishover: boolean) => {
+    if (ishover) setIsHover(true);
+    else setIsHover(false);
+  };
+
+  return (
+    <section className="mx-auto flex flex-col gap-5 items-center">
+      <Memoji resumeButtonIsHover={isHover} />
+      <GoResumeButton handleClick={openResume} handleHover={handleHover} />
+    </section>
+  );
+};
+
+export default IntroBadge;
