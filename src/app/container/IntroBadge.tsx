@@ -20,10 +20,10 @@ const IntroBadge = () => {
   };
 
   return (
-    <section className="mx-auto flex flex-col gap-5 items-center">
+    <article className="mx-auto flex flex-col gap-5 items-center w-full max-w-[1200px]">
       <Memoji resumeButtonIsHover={isHover} />
       <GoResumeButton handleClick={openResume} handleHover={handleHover} />
-    </section>
+    </article>
   );
 };
 
