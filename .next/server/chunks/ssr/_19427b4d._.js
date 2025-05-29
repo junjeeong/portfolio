@@ -79,56 +79,15 @@ const CommentBox = ({ question, answer })=>{
 };
 const __TURBOPACK__default__export__ = CommentBox;
 }}),
-"[project]/src/app/container/InterviewSection.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/app/container/InterviewSection.tsx [app-rsc] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname } = __turbopack_context__;
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$mock$2f$interviewComment$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/mock/interviewComment.ts [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$ui$2f$CommentBox$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/ui/CommentBox.tsx [app-rsc] (ecmascript)");
-;
-;
-;
-const InterviewSection = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "text-white font-blinker text-4xl",
-                children: "Interview"
-            }, void 0, false, {
-                fileName: "[project]/src/app/container/InterviewSection.tsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col mt-8 gap-6 text-white",
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$mock$2f$interviewComment$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["comments"].map((el, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$ui$2f$CommentBox$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        question: el.question,
-                        answer: el.answer
-                    }, idx, false, {
-                        fileName: "[project]/src/app/container/InterviewSection.tsx",
-                        lineNumber: 10,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/src/app/container/InterviewSection.tsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/container/InterviewSection.tsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, this);
-};
-const __TURBOPACK__default__export__ = InterviewSection;
-}}),
+const e = new Error(`Could not parse module '[project]/src/app/container/InterviewSection.tsx'
+
+'import', and 'export' cannot be used outside of module code`);
+e.code = 'MODULE_UNPARSEABLE';
+throw e;}}),
 "[project]/src/app/container/IntroBadge.tsx (client reference/proxy) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
 
@@ -349,7 +308,7 @@ const Title = ()=>{
                 }, this),
                 "입니다.",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "min-w-[1400px] absolute -top-24 -left-[15%] text-8xl font-blinker font-semibold text-white fadein-up",
+                    className: "min-w-[1400px] absolute -top-32 -left-[24%] text-[110px] font-blinker font-semibold text-white fadein-up",
                     children: "No UX, No business"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/home/Title.tsx",

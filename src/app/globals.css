@@ -17,6 +17,10 @@ body {
   font-family: "IBM Plex Sans KR", "Pretendard", "Blinker" "Geist";
 }
 
+h2 {
+  font-size: 56px;
+  font-weight: 500;
+}
 /* globals.css */
 @keyframes fadein {
   to {
@@ -73,6 +77,17 @@ body {
   }
 }
 
+@keyframes fadein-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .fadein {
   opacity: 0;
   animation: fadein 2s 0s forwards;
@@ -81,6 +96,14 @@ body {
 .fadein-up {
   opacity: 0;
   animation: fadein-up 0.8s ease-in-out 1s forwards;
+}
+
+.fadein-down {
+  animation: fadein-down 1s 4s both;
+}
+
+.fadein-down-delay {
+  animation: fadein-down 1s 4.5s both;
 }
 
 .fadein-delay {
@@ -105,5 +128,5 @@ body {
 
 .fadein-bounce {
   opacity: 0;
-  animation: fadein-up 3s 3s forwards, bounce 0.7s 0s infinite;
+  animation: fadein-up 1s 4.5s forwards, bounce 0.7s 0s infinite;
 }

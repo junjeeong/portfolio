@@ -29,7 +29,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const CommentBox = ({ question, answer })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-[#373737] rounded-l-2xl rounded-tr-2xl w-full h-[176px] p-5",
+        className: "bg-[#373737] rounded-l-2xl rounded-tr-2xl w-full h-[176px] p-5 text-lg",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                 className: "text-2xl",
@@ -40,6 +40,7 @@ const CommentBox = ({ question, answer })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "mt-4 text-base",
                 children: answer
             }, void 0, false, {
                 fileName: "[project]/src/app/components/ui/CommentBox.tsx",
@@ -68,26 +69,50 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 const InterviewSection = ()=>{
+    const comments = [
+        {
+            question: "Q. 왜 개발자가 되고 싶었나요?",
+            answer: `노트북 하나만 있으면 어디서든 내가 원하는 걸 만들 수 있고, 그렇게 만든 서비스가 누군가의 일상에 작은 편리함을 줄 수 있다는 점이 큰 매력으로 다가왔습니다.`
+        },
+        {
+            question: "Q. 본인의 강점은 무엇인가요?",
+            answer: `제 강점은 효용성을 중시하는 비판적 사고입니다. 기능을 멋지게 구현하는 것보다, 사용자가 만족하고 다시 사용할지에 더 큰 가치를 둡니다. 실제로 GA4 데이터 태깅을 통한 사용자 움직임 분석과 설문조사를 통해 불펺사항을 개선한 경험이 있습니다.`
+        },
+        {
+            question: "Q. 작업할 때 가장 중요하게 생각하는 부분이 있나요?",
+            answer: "사용하는 기술스택에 대한 이해도인 것 같습니다. 단순히 많이 써서가 아니라, 왜 이 기술이어야 했는지, 어떤 장점이 실제 프로젝트에 기여했는지를 고민하며 선택합니다. 그렇게 해야 개발의 생산성과 퀄리티 모두 자연스럽게 올라간다고 믿습니다."
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-            className: "text-white font-blinker text-4xl absolute top-4 left-4 ",
-            children: [
-                "Interview",
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$ui$2f$CommentBox$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/src/app/container/InterviewSection.tsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/container/InterviewSection.tsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+        className: "",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "text-white font-blinker text-4xl",
+                children: "Interview"
+            }, void 0, false, {
+                fileName: "[project]/src/app/container/InterviewSection.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col mt-8 gap-6 text-white",
+                children: comments.map((el, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$ui$2f$CommentBox$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        question: el.question,
+                        answer: el.answer
+                    }, idx, false, {
+                        fileName: "[project]/src/app/container/InterviewSection.tsx",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/app/container/InterviewSection.tsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/container/InterviewSection.tsx",
-        lineNumber: 5,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 };
@@ -313,7 +338,7 @@ const Title = ()=>{
                 }, this),
                 "입니다.",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "min-w-[1400px] absolute -top-24 -left-[15%] text-8xl font-blinker font-semibold text-white fadein-up",
+                    className: "min-w-[1400px] absolute -top-32 -left-[24%] text-[110px] font-blinker font-semibold text-white fadein-up",
                     children: "No UX, No business"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/home/Title.tsx",

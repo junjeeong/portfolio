@@ -1,11 +1,14 @@
-import ContentSection from "@/app/components/home/ContentSection";
-import HeroSection from "@/app/components/home/HeroSection";
+import AboutMe from "@/app/components/home/AboutMe";
+import Intro from "@/app/components/home/Intro";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <ContentSection />
+      <Intro />
+      <AboutMe />
+      {/* <Projects />
+      <Educations />
+      <Articles /> */}
     </>
   );
 }
