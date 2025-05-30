@@ -5,6 +5,34 @@ export const projectInfoList = [
     description: `네이버 클로바를 이용한 AI 생성형 챗봇 플랫폼입니다.
     상대방과의 관계, mbti를 설정할 수 있으며 어떤 주제로 대화를 나누면 좋을지 추천해 줍니다.`,
     tags: ["팀", "반응형", "CRA", "Naver Clova"],
+    duration: "2025.02 ~ 2025.05",
+    members: "6인(기획자 1명, 디자이너 1명, 백엔드 2명, 프론트 2명)",
+    themeColor: "#5b49e5",
+    features: [
+      "카카오 로그인",
+      "상대방 Mbti 테스트",
+      "나만의 MBTI 친구 만들기",
+      "AI 생성형 채팅",
+    ],
+    stacks: ["React", "TypeScript", "GA4", "Github Actions", "Zustand"],
+    troubles: [
+      {
+        problem:
+          "주 콘텐츠 페이지를 공유받아 들어온 사용자가, 404 에러를 마주하는 상황 발생",
+        progress:
+          "페이지 컴포넌트가 필요로 하는 상태값이 다른 페이지에 종속되어 있다는 문제를 발견하고, 각 페이지의 상태를 독립적으로 관리할 수 있도록 navigate.state 대신 URL 기반의 동적 파라미터 구조로 개선하였습니다.",
+        result:
+          "사용자가 원활하게 페이지를 공유받을 수 있게 됨 UX 상승, 개발자가 페이지 컴포넌트의 상태를 번거롭게 추적할 일이 없어지기에 개발의 편의성 및 유지보수성 증가",
+      },
+      {
+        problem:
+          "사용자 행동 기반의 불편 지점이 불명확함. 직관이나 추측에 의존하는 한계가 분명 존재하다고 판단",
+        progress:
+          "실제 사용자의 행동을 파악하기 위해 G4 React 라이브러리를 활용해 click/view 이벤트를 태깅하고, 설문조사를 병행하여 사용자 불편 요소를 실질적인 데이터로 분석함.",
+        result:
+          "데이터 기반 분석을 통해 사용자 이탈 지점을 명확히 파악하고, UI 개선으로 클릭률 및 전환율 향상 유도.",
+      },
+    ],
   },
   {
     imageUrl: "/logo/albaform.svg",
@@ -13,6 +41,40 @@ export const projectInfoList = [
 구직자와 구인자에게 다른 UI/UX를 제공해야 해 상태 분기 관리가 복잡했고,
 SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 과제였습니다.`,
     tags: ["팀", "반응형", "Next.js", "App Router"],
+    duration: "2024.11 - 2024.12",
+    members: "4인(프론트 4명)",
+    themeColor: "#f89a05",
+    features: [
+      "카카오 로그인",
+      "카카오 Map SDK",
+      "지원자/사장님에 따라 다른 UX 제공",
+    ],
+    stacks: [
+      "Next.js(App-router)",
+      "Typescript",
+      "Tailwind",
+      "Jotai",
+      "React-hook-form",
+      "Zod",
+    ],
+    troubles: [
+      {
+        problem:
+          "일부 페이지에서 Lighthouse Best Practices 점수가 78점으로 낮게 측정됨",
+        progress:
+          "HTTP 통신으로 인한 보안 경고 확인, 배포 시 SSL 적용으로 HTTPS로 전환",
+        result:
+          "Lighthouse 측정 결과, Best Practices를 포함한 모든 지표가 90점 이상으로 측정됨",
+      },
+      {
+        problem:
+          "App Router의 구조와 장점을 제대로 이해하지 못한 채 프로젝트를 시작",
+        progress:
+          "Hydration 최소화, Suspense 활용, 이미지 최적화 등 App Router의 강점 전반을 점검",
+        result:
+          "클라이언트 컴포넌트를 최소화하여 JS 번들 축소, Suspense로 FCP 개선, TTI 및 UX 향상",
+      },
+    ],
   },
   {
     imageUrl: "/logo/wikied.svg",
@@ -20,6 +82,40 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
     description: `Wikied는 지인 정보를 위키 형태로 작성·공유할 수 있는 플랫폼입니다.
     무한 스크롤 구현과 HTML 콘텐츠를 마크다운 스타일로 렌더링하는 것이 주요 과제였습니다.`,
     tags: ["팀", "반응형", "Next.js", "Page Router"],
+    duration: "2024.11 - 2024.11",
+    members: "5인(프론트 5명)",
+    themeColor: "#4bbea3",
+    features: [
+      "로그인/회원가입",
+      "지인의 위키를 직접 수정",
+      "무한 스크롤",
+      "위키 작성중 권한 관리",
+    ],
+    stacks: [
+      "Next.js(Page-router)",
+      "Tanstacks Query",
+      "Typescript",
+      "Tailwind",
+      "Zustand",
+    ],
+    troubles: [
+      {
+        problem:
+          "비동기 요청이 반복적으로 발생하면서, 사용자에게 대체 UI가 자주 노출되는 문제가 발생",
+        progress:
+          "Tanstacks Query의 useQuery 메서드를 활용해 기존 fetch 요청을 캐싱된 데이터로 대체",
+        result:
+          "평균 1.2초 소요되던 중복 API 요청이 제거되어 재방문 시 콘텐츠가 즉시 표시되었고, 사용자 체감 속도가 개선됨",
+      },
+      {
+        problem:
+          "페이지 컴포넌트가 상태와 JSX를 함께 관리하면서 로직이 복잡해지고 가독성이 저하된 상황",
+        progress:
+          "토스팀에서 제시한 Frontend-Fundamentals 클린코드 가이드를 바탕으로 리팩터링을 진행",
+        result:
+          "상태는 Hook이, 페이지는 UI만 담당하도록 구조 개선 → 유지보수성과 가독성 향상, DX 개선",
+      },
+    ],
   },
   {
     imageUrl: "/logo/linkbrary.svg",
@@ -27,5 +123,33 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
     description: `Linkbrary는 자주 방문하는 사이트를 카드 형식으로 관리하고 공유할 수 있는 웹 플랫폼입니다.
 상호작용 요소가 집중된 페이지 구조로 인해, 상태 분기 관리와 리렌더링 최소화가 핵심 과제였습니다.`,
     tags: ["팀", "반응형", "Next.js", "Page Router"],
+    duration: "2024.10 - 2024.11",
+    members: "4인(프론트 4명)",
+    themeColor: "#6d71fe",
+    features: [
+      "카카오 로그인",
+      "저장하고 싶은 링크를 추가하고 폴더로 관리",
+      "나만의 링크가 저장된 폴더를 지인에게 공유",
+      "링크 즐겨찾기로 관리",
+    ],
+    stacks: ["Next.js(Page-router)", "Typescript", "Tailwind", "Zustand"],
+    troubles: [
+      {
+        problem:
+          "서버에서 404, 500 오류 발생 시 사용자에게 안내가 없어 혼란 발생",
+        progress:
+          "에러 코드를 감지해 Next.js의 404.tsx, 500.tsx 등으로 리다이렉션",
+        result:
+          "사용자에게 오류 상황을 명확히 전달하고, 빠르게 대처할 수 있는 UX 제공",
+      },
+      {
+        problem:
+          "AccessToken과 RefreshToken을 로컬 스토리지에 저장해, XSS로 인한 노출 위험 발생",
+        progress:
+          "로그인 시 토큰을 HttpOnly 쿠키에 저장하고, 인증 처리는 서버 API Route에서 Proxy 방식으로 수행",
+        result:
+          "클라이언트에서 토큰 접근을 차단하고 서버 중심 처리로 전환하여 XSS/CSRF 보안 강화",
+      },
+    ],
   },
 ];

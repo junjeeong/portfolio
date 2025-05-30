@@ -329,6 +329,11 @@ img, video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -357,6 +362,10 @@ img, video {
   margin-top: auto;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -379,6 +388,10 @@ img, video {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-\[173px\] {
+  height: 173px;
 }
 
 .h-\[176px\] {
@@ -411,6 +424,10 @@ img, video {
 
 .h-\[64px\] {
   height: 64px;
+}
+
+.h-\[900px\] {
+  height: 900px;
 }
 
 .h-auto {
@@ -459,6 +476,10 @@ img, video {
 
 .w-\[54px\] {
   width: 54px;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
 }
 
 .w-full {
@@ -593,6 +614,14 @@ img, video {
   align-self: flex-start;
 }
 
+.self-center {
+  align-self: center;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -674,6 +703,10 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-70 {
+  --tw-bg-opacity: .7;
+}
+
 .bg-\[url\(\'\/image\/background\.jpg\'\)\] {
   background-image: url("/image/background.jpg");
 }
@@ -684,6 +717,10 @@ img, video {
 
 .p-14 {
   padding: 3.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .p-5 {
@@ -760,6 +797,11 @@ img, video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
