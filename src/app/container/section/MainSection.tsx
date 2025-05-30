@@ -1,49 +1,51 @@
-import ProjectTypeFilter from "@/app/components/button/ProjectTypeFilter";
-import ProjectCard from "@/app/components/ProjectCard";
+"use client";
+
+import { useState } from "react";
+import { useInView } from "@/app/hook/useInView";
+import { projectInfoList } from "@/app/mock/project-info-list";
+import clsx from "clsx";
+import MainCategory from "@/app/container/MainCategory";
+import ProjectSection from "@/app/container/section/ProjectSection";
+import ArticleSection from "@/app/container/section/ArticleSection";
+import CareerSection from "@/app/container/section/CareerSection";
+import ContentTypeFilter from "@/app/components/button/ContentTypeFilter";
 
 const Project = () => {
-  const projectContent = [
-    {
-      imageUrl: "",
-      title: "Mbtips",
-      description: "",
-      tags: ["팀", "반응형 웹", "AI 생성형 챗봇"],
-    },
-    {
-      imageUrl: "",
-      title: "Albaform",
-      description: "",
-      tags: ["팀", "반응형 웹", "긱시크"],
-    },
-    {
-      imageUrl: "",
-      title: "Wikied",
-      description: "",
-      tags: ["팀", "반응형 웹"],
-    },
-    {
-      imageUrl: "",
-      title: "Linkbrary",
-      description: "",
-      tags: ["팀", "반응형 웹"],
-    },
-  ];
+  const [isSelected, setIsSelected] = useState({
+    project: true,
+    career: false,
+    article: false,
+  });
+
+  const { ref, isInView } = useInView({
+    threshold: 0.3,
+    rootMargin: "0px 0px -100px 0px",
+  });
+
+  const handleSelect = (el: "project" | "career" | "article") => {
+    setIsSelected({
+      project: false,
+      career: false,
+      article: false,
+      [el]: true,
+    });
+  };
 
   return (
-    <section className="relative flex items-center w-full gap-14 p-14">
-      <div className="flex flex-col self-start gap-4">
-        <h2 className="font-bold text-white text-7xl font-blinker">Project</h2>
-        <h2 className="font-bold text-white text-7xl font-blinker">Career</h2>
-        <h2 className="font-bold text-white text-7xl font-blinker">Article</h2>
-      </div>
+    <section
+      className={clsx(
+        "relative flex items-center w-full gap-14 p-14 transition-all duration-1000 ease-out",
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40"
+      )}
+      ref={ref}
+    >
+      <MainCategory isSelected={isSelected} handleSelect={handleSelect} />
 
       <div className="w-[1200px] flex-col flex">
-        <ProjectTypeFilter />
-        <section className="grid grid-cols-3 gap-4 mt-8">
-          {projectContent.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </section>
+        <ContentTypeFilter />
+        {isSelected.project && <ProjectSection list={projectInfoList} />}
+        {isSelected.career && <CareerSection />}
+        {isSelected.article && <ArticleSection />}
       </div>
     </section>
   );
