@@ -9,13 +9,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html lang="ko">
       <body>
         <main className="flex flex-col items-center">{children}</main>
+        {modal}
+        <div id="modal-root"></div>
         <FloatingButtons />
       </body>
     </html>

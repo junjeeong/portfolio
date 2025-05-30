@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/junjeong/Documents/%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3/Portfolio/src/app/components/svg/ArrowDown.tsx"],"sourcesContent":["\"use client\";\n\nconst ArrowDown = (props: React.SVGProps<SVGSVGElement>) => {\n  const handleScrollDown = () => {\n    window.scrollTo({ top: document.body.scrollHeight, behavior: \"smooth\" });\n  };\n\n  return (\n    <button onClick={handleScrollDown}>\n      <svg\n        xmlns=\"http://www.w3.org/2000/svg\"\n        fill=\"none\"\n        viewBox=\"0 0 24 24\"\n        strokeWidth={1.5}\n        stroke=\"currentColor\"\n        {...props}\n      >\n        <path\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n          d=\"m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5\"\n        />\n      </svg>\n    </button>\n  );\n};\n\nexport default ArrowDown;\n"],"names":[],"mappings":";;;;AAAA;;AAEA,MAAM,YAAY,CAAC;IACjB,MAAM,mBAAmB;QACvB,OAAO,QAAQ,CAAC;YAAE,KAAK,SAAS,IAAI,CAAC,YAAY;YAAE,UAAU;QAAS;IACxE;IAEA,qBACE,8OAAC;QAAO,SAAS;kBACf,cAAA,8OAAC;YACC,OAAM;YACN,MAAK;YACL,SAAQ;YACR,aAAa;YACb,QAAO;YACN,GAAG,KAAK;sBAET,cAAA,8OAAC;gBACC,eAAc;gBACd,gBAAe;gBACf,GAAE;;;;;;;;;;;;;;;;AAKZ;uCAEe","debugId":null}}]
-}

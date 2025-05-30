@@ -144,3 +144,15 @@ h2 {
 .text-sm-res {
   font-size: clamp();
 }
+
+.modal {
+  width: 80%;
+  max-width: 80vw;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
