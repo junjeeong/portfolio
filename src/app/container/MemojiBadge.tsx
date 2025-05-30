@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import GoResumeButton from "@/app/components/home/GoResumeButton";
-import Memoji from "@/app/components/ui/Memoji";
+import GoResumeButton from "@/app/components/button/GoResumeButton";
+import Memoji from "@/app/components/Memoji";
 
 const MemojiBadge = () => {
   const [isHover, setIsHover] = useState(false);

@@ -2,7 +2,7 @@ const Title = () => {
   return (
     <div className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center w-full h-[300px] center-to-up">
       <h2 className="relative flex flex-col items-center mt-12 text-black">
-        <span className="text-6xl lg:text-9xl font-[900] font-blinker text-white fadein-up md:text-8xl">
+        <span className="text-6xl lg:text-9xl font-[600] font-blinker text-white fadein-up md:text-8xl">
           No UX, No business
         </span>
 

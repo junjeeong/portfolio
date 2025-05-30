@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import FloatingButtonContainer from "@/app/container/FloatingButtonContainer";
+import FloatingButtons from "@/app/components/FloatingButtons";
 
 export const metadata: Metadata = {
   title: "junyeong portfolio",
@@ -15,8 +15,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="flex items-center flex-col">{children}</div>
-        <FloatingButtonContainer />
+        <main className="flex flex-col items-center">{children}</main>
+        <FloatingButtons />
       </body>
     </html>
   );

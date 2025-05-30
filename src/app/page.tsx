@@ -1,6 +1,6 @@
-import IntroSection from "@/app/components/section/IntroSection";
-import SummarySection from "@/app/components/section/SummarySection";
-import MainSection from "@/app/components/section/MainSection";
+import IntroSection from "@/app/container/section/IntroSection";
+import SummarySection from "@/app/container/section/SummarySection";
+import MainSection from "@/app/container/section/MainSection";
 
 export default function Home() {
   return (

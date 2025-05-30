@@ -333,8 +333,8 @@ img, video {
   margin-left: 5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-14 {
@@ -351,10 +351,6 @@ img, video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .block {
@@ -413,6 +409,18 @@ img, video {
   height: 100vh;
 }
 
+.h-\[360px\] {
+  height: 360px;
+}
+
+.h-\[180px\] {
+  height: 180px;
+}
+
+.h-\[45\%\] {
+  height: 45%;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -453,6 +461,10 @@ img, video {
   width: 100vw;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
@@ -463,6 +475,10 @@ img, video {
 
 .max-w-\[900px\] {
   max-width: 900px;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .-translate-x-1\/2 {
@@ -483,12 +499,20 @@ img, video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -543,12 +567,28 @@ img, video {
   row-gap: 1rem;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+
+.rounded-md {
+  border-radius: .375rem;
+}
+
+.rounded-sm {
+  border-radius: .125rem;
 }
 
 .rounded-l-2xl {
@@ -607,6 +647,11 @@ img, video {
   background-size: cover;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .p-14 {
   padding: 3.5rem;
 }
@@ -617,6 +662,14 @@ img, video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: .5rem;
 }
 
 .px-1 {
@@ -659,12 +712,26 @@ img, video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-blinker {
   font-family: Blinker, sans-serif;
+}
+
+.font-noto {
+  font-family: Noto Sans KR, sans-serif;
 }
 
 .text-2xl {
@@ -677,6 +744,11 @@ img, video {
   line-height: 2.5rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -684,10 +756,6 @@ img, video {
 
 .text-\[14\.8px\] {
   font-size: 14.8px;
-}
-
-.text-\[60px\] {
-  font-size: 60px;
 }
 
 .text-base {
@@ -705,14 +773,14 @@ img, video {
   line-height: 1.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-xs {
+  font-size: .75rem;
+  line-height: 1rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-\[900\] {
@@ -723,16 +791,32 @@ img, video {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
-.font-normal {
-  font-weight: 400;
+.font-\[800\] {
+  font-weight: 800;
 }
 
-.font-light {
-  font-weight: 300;
+.font-\[700\] {
+  font-weight: 700;
+}
+
+.font-\[600\] {
+  font-weight: 600;
+}
+
+.font-\[500\] {
+  font-weight: 500;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .text-black {
@@ -930,35 +1014,13 @@ h2 {
 }
 
 @media (width >= 1024px) {
-  .lg\:text-\[120px\] {
-    font-size: 120px;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
   .lg\:text-9xl {
     font-size: 8rem;
-    line-height: 1;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-\[64px\] {
-    font-size: 64px;
-  }
-
-  .lg\:text-\[68px\] {
-    font-size: 68px;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
     line-height: 1;
   }
 }

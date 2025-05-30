@@ -1,4 +1,4 @@
-import CommentBox from "@/app/components/ui/CommentBox";
+import CommentBox from "@/app/components/CommentBox";
 
 const InterviewSection = () => {
   const comments = [
@@ -19,8 +19,8 @@ const InterviewSection = () => {
 
   return (
     <section>
-      <h3 className="text-white font-blinker text-4xl">Interview</h3>
-      <div className="flex flex-col mt-8 gap-6 text-white">
+      <h3 className="text-4xl text-white font-blinker">Interview</h3>
+      <div className="flex flex-col gap-6 mt-8 text-white">
         {comments.map((el, idx) => (
           <CommentBox key={idx} question={el.question} answer={el.answer} />
         ))}

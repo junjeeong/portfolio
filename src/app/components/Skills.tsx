@@ -1,4 +1,4 @@
-import SkillsItem from "@/app/components/ui/SkillsItem";
+import SkillsItem from "@/app/components/SkillsItem";
 
 const Skills = () => {
   const stack = [
