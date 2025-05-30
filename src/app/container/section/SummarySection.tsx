@@ -2,7 +2,7 @@ import Skills from "@/app/components/home/Skills";
 import InterviewSection from "@/app/container/InterviewSection";
 import MemojiBadge from "@/app/container/MemojiBadge";
 
-const AboutMe = () => {
+const SummarySection = () => {
   return (
     <section className="relative flex flex-col items-center w-full p-14">
       <div className="max-w-[900px] w-full flex flex-col gap-20 mt-14">
@@ -17,4 +17,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default SummarySection;

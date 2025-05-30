@@ -1,10 +1,10 @@
-import Header from "@/app/components/home/Header";
-import Junyeong from "@/app/components/home/Junyeong";
+import Header from "@/app/components/layout/Header";
 import Title from "@/app/components/home/Title";
 import Background from "@/app/components/layout/Background";
-import ArrowDown from "@/app/components/svg/ArrowDown";
+import ArrowDownIcon from "@/app/components/svg/ArrowDownIcon";
+import Junyeong from "@/app/components/ui/Junyeong";
 
-const Intro = () => {
+const IntroSection = () => {
   return (
     <>
       <section className="sticky top-0 z-0 flex flex-col items-center w-screen h-screen">
@@ -14,10 +14,10 @@ const Intro = () => {
         <Header />
         <Title />
         <Junyeong />
-        <ArrowDown />
+        <ArrowDownIcon />
       </section>
     </>
   );
 };
 
-export default Intro;
+export default IntroSection;

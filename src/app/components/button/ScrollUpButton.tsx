@@ -1,10 +1,10 @@
 import FloatingButton from "@/app/components/button/FloatingButton";
-import ArrowUp from "@/app/components/svg/ArrowUp";
+import ArrowUpIcon from "@/app/components/svg/ArrowUpIcon";
 
 const ScrollUpButton = () => {
   return (
     <FloatingButton>
-      <ArrowUp className="w-6 h-6" />
+      <ArrowUpIcon className="w-6 h-6" />
     </FloatingButton>
   );
 };

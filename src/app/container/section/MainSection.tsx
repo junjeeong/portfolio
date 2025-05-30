@@ -1,5 +1,5 @@
-import NavigationBar from "@/app/components/project/NavigationBar";
-import ProjectCard from "@/app/components/project/ProjectCard";
+import NavigationBar from "@/app/components/button/NavigationBar";
+import ProjectCard from "@/app/components/ProjectCard";
 
 const Project = () => {
   const projectContent = [
@@ -28,6 +28,7 @@ const Project = () => {
       tag: ["팀", "반응형 웹"],
     },
   ];
+
   return (
     <section className="relative flex items-center w-full gap-14 p-14">
       <div className="flex flex-col gap-4">

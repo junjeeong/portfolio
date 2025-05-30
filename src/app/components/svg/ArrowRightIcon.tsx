@@ -1,10 +1,4 @@
-"use client";
-
-const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => {
-  const navigateScrollTop = () => {
-    window.scroll({ top: 0, behavior: "smooth" });
-  };
-
+const ArrowRightIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,16 +7,15 @@ const ArrowUp = (props: React.SVGProps<SVGSVGElement>) => {
       strokeWidth={1.5}
       stroke="currentColor"
       className="size-6"
-      onClick={navigateScrollTop}
       {...props}
     >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        d="m8.25 4.5 7.5 7.5-7.5 7.5"
       />
     </svg>
   );
 };
 
-export default ArrowUp;
+export default ArrowRightIcon;

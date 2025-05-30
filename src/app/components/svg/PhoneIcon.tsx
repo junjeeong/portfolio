@@ -1,4 +1,4 @@
-const Phone = (props: React.SVGProps<SVGSVGElement>) => {
+const PhoneIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <a href="tel:01058199547">
       <svg
@@ -18,4 +18,4 @@ const Phone = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default Phone;
+export default PhoneIcon;

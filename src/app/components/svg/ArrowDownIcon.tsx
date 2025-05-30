@@ -1,4 +1,4 @@
-const ArrowDown = (props: React.SVGProps<SVGSVGElement>) => {
+const ArrowDownIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <div className="absolute bottom-0 w-16 h-16 text-white -translate-x-1/2 left-1/2 fadein-bounce">
       <svg
@@ -27,4 +27,4 @@ const ArrowDown = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default ArrowDown;
+export default ArrowDownIcon;

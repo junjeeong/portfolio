@@ -1,10 +1,10 @@
 import FloatingButton from "@/app/components/button/FloatingButton";
-import Phone from "@/app/components/svg/Phone";
+import PhoneIcon from "@/app/components/svg/PhoneIcon";
 
 const CallButton = () => {
   return (
     <FloatingButton>
-      <Phone className="w-6 h-6" />
+      <PhoneIcon className="w-6 h-6" />
     </FloatingButton>
   );
 };

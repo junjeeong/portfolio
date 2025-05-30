@@ -1,14 +1,14 @@
-import AboutMe from "@/app/components/home/AboutMe";
-import Intro from "@/app/components/home/Intro";
-import Project from "@/app/container/Project";
+import IntroSection from "@/app/components/section/IntroSection";
+import SummarySection from "@/app/components/section/SummarySection";
+import MainSection from "@/app/components/section/MainSection";
 
 export default function Home() {
   return (
     <>
-      <Intro />
+      <IntroSection />
       <div className="bg-[#232323] h-[2400px] w-screen z-10">
-        <AboutMe />
-        <Project />
+        <SummarySection />
+        <MainSection />
       </div>
       {/* <Educations />
       <Articles /> */}

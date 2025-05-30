@@ -1,4 +1,4 @@
-const Mail = (props: React.SVGProps<SVGSVGElement>) => {
+const MailIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <a href="mailto:wn8624@gmail.com">
       <svg
@@ -15,4 +15,4 @@ const Mail = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default Mail;
+export default MailIcon;

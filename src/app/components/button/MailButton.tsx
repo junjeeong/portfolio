@@ -1,10 +1,10 @@
 import FloatingButton from "@/app/components/button/FloatingButton";
-import Mail from "@/app/components/svg/Mail";
+import MailIcon from "@/app/components/svg/MailIcon";
 
 const MailButton = () => {
   return (
     <FloatingButton>
-      <Mail className="w-6 h-6" />
+      <MailIcon className="w-6 h-6" />
     </FloatingButton>
   );
 };
