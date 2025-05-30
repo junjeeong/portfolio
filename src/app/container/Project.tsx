@@ -1,7 +1,7 @@
 import NavigationBar from "@/app/components/project/NavigationBar";
 import ProjectCard from "@/app/components/project/ProjectCard";
 
-const ProjectSection = () => {
+const Project = () => {
   const projectContent = [
     {
       imageUrl: "",
@@ -29,14 +29,19 @@ const ProjectSection = () => {
     },
   ];
   return (
-    <section>
-      <h2 className="text-7xl text-white font-blinker font-bold sticky top-0 left">
-        Project
-      </h2>
-      <NavigationBar />
-      <ProjectCard />
+    <section className="relative flex items-center w-full gap-14 p-14">
+      <div className="flex flex-col gap-4">
+        <h2 className="font-bold text-white text-7xl font-blinker">Project</h2>
+        <h2 className="font-bold text-white text-7xl font-blinker">Career</h2>
+        <h2 className="font-bold text-white text-7xl font-blinker">Article</h2>
+      </div>
+
+      <div className="w-[1200px] flex-col flex">
+        <NavigationBar />
+        <ProjectCard />
+      </div>
     </section>
   );
 };
 
-export default ProjectSection;
+export default Project;

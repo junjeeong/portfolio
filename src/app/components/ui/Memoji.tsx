@@ -9,7 +9,6 @@ const Memoji = ({ resumeButtonIsHover }: { resumeButtonIsHover: boolean }) => {
         width={460}
         height={460}
         alt="정준영 미모지"
-        className="pt-14"
       />
       <HashTag />
     </figure>
