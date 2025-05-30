@@ -44,7 +44,7 @@ const ProjectPage = ({ params }: { params: Params }) => {
   console.log("가져온 info", info);
 
   return (
-    <article className="w-[80vw] h-[900px] flex flex-col items-center">
+    <article className="w-[80vw] h-[900px] flex flex-col items-center font-pre">
       <section
         className="w-full h-[173px] flex flex-col items-center gap-4 p-5 bg-opacity-70"
         style={{ backgroundColor: themeColor }}
@@ -69,35 +69,42 @@ const ProjectPage = ({ params }: { params: Params }) => {
 
           {/* divider */}
           <div className="w-full my-10 border" />
+        </section>
 
-          <h2 className="text-2xl">🧑‍💻 주요 기능</h2>
-          <ul>
-            {features.map((el, index) => (
-              <li key={index}>{el}</li>
+        <div className="flex flex-col gap-10">
+          <section className="flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold ">🧑‍💻 주요 기능</h2>
+            <p className="text-base font-light">
+              {features.map((el, index) => (
+                <li key={index}>{el}</li>
+              ))}
+            </p>
+          </section>
+          <section className="flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold ">🛠️ 기술 스택</h2>
+            <p className="text-base font-light">
+              {stacks.map((el, index) => (
+                <li key={index}>{el}</li>
+              ))}
+            </p>
+          </section>
+
+          <section className="flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold ">✨ 기여한 작업</h2>
+            {troubles.map((el, index) => (
+              <div>아 모르겠따</div>
+              // ???
             ))}
-          </ul>
-        </section>
-        <section className="flex flex-col">
-          <h2 className="text-2xl">🛠️ 기술 스택</h2>
-          <p>
-            {stacks.map((el, index) => (
-              <li key={index}>{el}</li>
+          </section>
+
+          <section className="flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold ">🚀 Trouble Shooting</h2>
+            {troubles.map((el, index) => (
+              <div>아 모르겠따</div>
+              // ??
             ))}
-          </p>
-        </section>
-        <section className="flex flex-col">
-          <h2 className="text-2xl">🚀 트러블 슈팅</h2>
-          {troubles.map((el, index) => (
-            <div key={index} className="mb-6">
-              <h3 className="mt-4 font-semibold">어떤 문제가 있었는가?</h3>
-              <p>{el.problem}</p>
-              <h3 className="mt-4 font-semibold">어떻게 해결했는가?</h3>
-              <p>{el.progress}</p>
-              <h3 className="mt-4 font-semibold">어떤 결과를 얻었는가?</h3>
-              <p>{el.result}</p>
-            </div>
-          ))}
-        </section>
+          </section>
+        </div>
       </section>
     </article>
   );

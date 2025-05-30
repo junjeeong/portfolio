@@ -1,8 +1,8 @@
-import Header from "@/app/components/layout/Header";
-import Background from "@/app/components/layout/Background";
-import ArrowDownIcon from "@/app/components/svg/ArrowDownIcon";
-import Title from "@/app/components/Title";
 import Junyeong from "@/app/components/Junyeong";
+import Title from "@/app/components/Title";
+import Background from "@/app/components/layout/Background";
+import Header from "@/app/components/layout/Header";
+import ArrowDownIcon from "@/app/components/svg/ArrowDownIcon";
 
 const IntroSection = () => {
   return (
