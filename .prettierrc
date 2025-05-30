@@ -10,9 +10,8 @@
     "^@/.*",
     "^[./]"
   ],
-  "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "semi": true,
-  "singleQuote": true,
+  "singleQuote": false,
   "trailingComma": "all"
 }

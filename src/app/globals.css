@@ -14,7 +14,10 @@
 
 body {
   background-color: var(--background);
-  font-family: "IBM Plex Sans KR", "Pretendard", "Blinker" "Geist";
+  font-family:
+    "IBM Plex Sans KR",
+    "Pretendard",
+    "Blinker" "Geist";
 }
 
 h2 {
@@ -93,6 +96,11 @@ h2 {
   animation: fadein 2s 0s forwards;
 }
 
+.fadein-fast {
+  opacity: 0;
+  animation: fadein 0.5s 0s forwards;
+}
+
 .fadein-up {
   opacity: 0;
   animation: fadein-up 0.8s ease-in-out 1s forwards;
@@ -128,5 +136,11 @@ h2 {
 
 .fadein-bounce {
   opacity: 0;
-  animation: fadein-up 1s 4.5s forwards, bounce 0.7s 0s infinite;
+  animation:
+    fadein-up 1s 4.5s forwards,
+    bounce 0.7s 0s infinite;
+}
+
+.text-sm-res {
+  font-size: clamp();
 }

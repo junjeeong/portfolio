@@ -21,7 +21,7 @@ const MainCategory = ({ isSelected, handleSelect }: MainCategoryProps) => {
           commonStyle,
           isSelected.project
             ? "text-white"
-            : "text-[#373737] hover:text-[#747474]"
+            : "text-[#373737] hover:text-[#747474]",
         )}
         onClick={() => handleSelect("project")}
       >
@@ -32,7 +32,7 @@ const MainCategory = ({ isSelected, handleSelect }: MainCategoryProps) => {
           commonStyle,
           isSelected.career
             ? "text-white"
-            : "text-[#373737] hover:text-[#747474]"
+            : "text-[#373737] hover:text-[#747474]",
         )}
         onClick={() => handleSelect("career")}
       >
@@ -43,7 +43,7 @@ const MainCategory = ({ isSelected, handleSelect }: MainCategoryProps) => {
           commonStyle,
           isSelected.article
             ? "text-white"
-            : "text-[#373737] hover:text-[#747474]"
+            : "text-[#373737] hover:text-[#747474]",
         )}
         onClick={() => handleSelect("article")}
       >

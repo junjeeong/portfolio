@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useInView } from "@/app/hook/useInView";
-import { projectInfoList } from "@/app/mock/project-info-list";
 import clsx from "clsx";
 import MainCategory from "@/app/container/MainCategory";
-import ProjectSection from "@/app/container/section/ProjectSection";
 import ArticleSection from "@/app/container/section/ArticleSection";
 import CareerSection from "@/app/container/section/CareerSection";
-import ContentTypeFilter from "@/app/components/button/ContentTypeFilter";
+import ProjectSection from "@/app/container/section/ProjectSection";
+import { useInView } from "@/app/hook/useInView";
+import { projectInfoList } from "@/app/mock/project-info-list";
 
 const Project = () => {
   const [isSelected, setIsSelected] = useState({
@@ -32,17 +31,16 @@ const Project = () => {
   };
 
   return (
-    <section
-      className={clsx(
-        "relative flex items-center w-full gap-14 p-14 transition-all duration-1000 ease-out",
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40"
-      )}
-      ref={ref}
-    >
+    <section className="relative flex items-center w-full gap-14 p-14">
       <MainCategory isSelected={isSelected} handleSelect={handleSelect} />
 
-      <div className="w-[1200px] flex-col flex">
-        <ContentTypeFilter />
+      <div
+        className={clsx(
+          "w-[1200px] flex-col flex transition-all duration-700 ease-out",
+          isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40",
+        )}
+        ref={ref}
+      >
         {isSelected.project && <ProjectSection list={projectInfoList} />}
         {isSelected.career && <CareerSection />}
         {isSelected.article && <ArticleSection />}

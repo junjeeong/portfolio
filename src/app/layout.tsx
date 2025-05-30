@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import FloatingButtons from "@/app/components/FloatingButtons";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "junyeong portfolio",
