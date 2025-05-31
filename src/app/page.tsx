@@ -1,5 +1,6 @@
 import IntroSection from "@/container/section/IntroSection";
 import MainSection from "@/container/section/MainSection";
+import OutroSectoin from "@/container/section/OutroSectoin";
 import SummarySection from "@/container/section/SummarySection";
 
 export default function Home() {
@@ -10,8 +11,7 @@ export default function Home() {
         <SummarySection />
         <MainSection />
       </div>
-      {/* <Educations />
-      <Articles /> */}
+      <OutroSectoin />
     </>
   );
 }
