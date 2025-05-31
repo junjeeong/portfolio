@@ -5,10 +5,10 @@ import clsx from "clsx";
 interface MainCategoryProps {
   isSelected: {
     project: boolean;
-    career: boolean;
+    education: boolean;
     article: boolean;
   };
-  handleSelect: (el: "project" | "career" | "article") => void;
+  handleSelect: (el: "project" | "education" | "article") => void;
 }
 const MainCategory = ({ isSelected, handleSelect }: MainCategoryProps) => {
   const commonStyle =
@@ -30,13 +30,13 @@ const MainCategory = ({ isSelected, handleSelect }: MainCategoryProps) => {
       <h2
         className={clsx(
           commonStyle,
-          isSelected.career
+          isSelected.education
             ? "text-white"
             : "text-[#373737] hover:text-[#747474]",
         )}
-        onClick={() => handleSelect("career")}
+        onClick={() => handleSelect("education")}
       >
-        Career
+        Education
       </h2>
       <h2
         className={clsx(

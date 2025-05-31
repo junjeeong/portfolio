@@ -1,5 +1,12 @@
 const ArticleSection = () => {
-  return <div>Article 섹션입니다</div>;
+  return (
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  );
 };
 
 export default ArticleSection;
