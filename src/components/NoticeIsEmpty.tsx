@@ -4,7 +4,7 @@ const NoticeIsEmpty = () => {
   return (
     <figure className="flex flex-col items-center w-full gap-4">
       <Image
-        src="/image/sad.png"
+        src="/image/sad.PNG"
         width={400}
         height={400}
         alt="not-found logo"
