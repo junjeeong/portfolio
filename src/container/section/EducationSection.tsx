@@ -1,8 +1,8 @@
 const EducationSection = () => {
   return (
-    <section className="grid grid-cols-2 max-w-[800px] mt-8 fadein-fast gap-6 justify-items-center">
-      <div className="flex flex-col gap-5 w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
-        <h2 className="text-5xl font-normal text-white">
+    <section className="grid sm:w-[calc(100vw-64px)] sm:grid-cols-1 grid-cols-2 sm:max-w-[720px] max-w-[800px] mt-8 fadein-fast gap-6 justify-items-center">
+      <div className="sm:w-[320px] flex flex-col gap-5 w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
+        <h2 className="text-5xl font-normal text-white sm:text-2xl">
           코드잇 - Sprint FE 9기
         </h2>
         <p className="text-[#a6a6a6] text-sm"> 2024.07 ~ 2024.12 수료 </p>
@@ -18,8 +18,8 @@ const EducationSection = () => {
           Go blog
         </a>
       </div>
-      <div className="flex flex-col gap-5  w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
-        <h2 className="text-5xl font-normal text-white">
+      <div className="sm:w-[320px] flex flex-col gap-5 w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
+        <h2 className="text-5xl font-normal text-white sm:text-2xl">
           &quot;모던 JS Deep Dive&quot; 북스터티{" "}
         </h2>
         <p className="text-[#a6a6a6] text-sm">2023.08 ~ 2023.10</p>
@@ -36,8 +36,8 @@ const EducationSection = () => {
           Go blog
         </a>
       </div>
-      <div className="flex flex-col gap-5  w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
-        <h2 className="text-5xl font-normal text-white">
+      <div className="sm:w-[320px] flex flex-col gap-5 w-[380px] h-[360px] bg-[#323232] p-5 rounded-[4px]">
+        <h2 className="text-5xl font-normal text-white sm:text-2xl">
           &quot;면접을 위한 CS 전공지식 노트&quot; 북스터디
         </h2>
         <p className="text-[#a6a6a6] text-sm">2024.07.18 ~ 2024.09.13</p>
