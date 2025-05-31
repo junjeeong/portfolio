@@ -1,4 +1,4 @@
-export const projectDeatilInfo = {
+export const teamProjectDeatilInfo = {
   mbtips: {
     imageUrl: "/logo/mbtips.svg",
     title: "Mbtips",

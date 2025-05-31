@@ -1,6 +1,6 @@
-import Skills from "@/app/components/home/Skills";
-import MemojiBadge from "@/app/container/MemojiBadge";
-import InterviewSection from "@/app/container/section/InterviewSection";
+import Skills from "@/components/Skills";
+import MemojiBadge from "@/container/MemojiBadge";
+import InterviewSection from "@/container/section/InterviewSection";
 
 const AboutMeSection = () => {
   return (

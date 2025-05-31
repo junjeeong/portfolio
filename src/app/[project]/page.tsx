@@ -1,9 +1,12 @@
+import { type FC } from "react";
 import ProjectTag from "@/components/ProjectTag";
 import ShowDetailButton from "@/components/button/ShowDetailButton";
-import { projectDeatilInfo } from "@/mock/project-deatil-info";
+import { teamProjectDeatilInfo } from "@/mock/team-project-deatil-info";
 
-interface Params {
-  project: string;
+interface PageProps {
+  params: {
+    project: string;
+  };
 }
 
 export interface ProjectInfo {
@@ -27,10 +30,10 @@ export interface ProjectInfo {
   };
 }
 
-const ProjectPage = ({ params }: { params: Params }) => {
+const ProjectPage: FC<PageProps> = async ({ params }) => {
   const { project } = params;
 
-  const info: ProjectInfo = projectDeatilInfo[project];
+  const info: ProjectInfo = teamProjectDeatilInfo[project];
 
   const {
     title,
