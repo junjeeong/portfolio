@@ -1,3 +1,1 @@
-export const soloProjectDeatilInfo = {
-  name: null,
-};
+export const soloProjectDeatilInfo = {};
