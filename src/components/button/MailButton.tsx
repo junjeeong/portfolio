@@ -1,5 +1,5 @@
-import FloatingButton from "@/app/components/button/FloatingButton";
-import MailIcon from "@/app/components/svg/MailIcon";
+import FloatingButton from "@/components/button/FloatingButton";
+import MailIcon from "@/components/svg/MailIcon";
 
 const MailButton = () => {
   return (

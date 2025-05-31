@@ -1,5 +1,5 @@
 import ProjectPage from "@/app/[project]/page";
-import Modal from "@/app/container/modal/Modal";
+import Modal from "@/container/modal/Modal";
 
 type Props = {
   params: { project: string };

@@ -1,4 +1,4 @@
-import CommentBox from "@/app/components/CommentBox";
+import CommentBox from "@/components/CommentBox";
 
 const InterviewSection = () => {
   const comments = [

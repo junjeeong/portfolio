@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import GoResumeButton from "@/app/components/button/GoResumeButton";
-import Memoji from "@/app/components/Memoji";
+import Memoji from "@/components/Memoji";
+import GoResumeButton from "@/components/button/GoResumeButton";
 
 const MemojiBadge = () => {
   const [isHover, setIsHover] = useState(false);
@@ -10,7 +10,7 @@ const MemojiBadge = () => {
   const openResume = () => {
     window.open(
       "https://woolen-scissor-0a1.notion.site/junjeong-1ff200834c4a807e9896c084531c542f",
-      "_blank"
+      "_blank",
     );
   };
 

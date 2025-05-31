@@ -1,6 +1,6 @@
 const ArrowDownIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
-    <div className="absolute bottom-0 w-16 h-16 text-white -translate-x-[50%] left-[48.5%] fadein-bounce">
+    <div className="absolute bottom-0 w-16 h-16 text-white -translate-x-[50%] left-[48.5%] fadein-bounce ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 48"

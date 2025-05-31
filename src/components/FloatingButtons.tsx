@@ -1,6 +1,6 @@
-import CallButton from "@/app/components/button/CallButton";
-import MailButton from "@/app/components/button/MailButton";
-import ScrollUpButton from "@/app/components/button/ScrollUpButton";
+import CallButton from "@/components/button/CallButton";
+import MailButton from "@/components/button/MailButton";
+import ScrollUpButton from "@/components/button/ScrollUpButton";
 
 const FloatingButtons = () => {
   return (

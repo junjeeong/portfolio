@@ -1,4 +1,4 @@
-import ArrowRightIcon from "@/app/components/svg/ArrowRightIcon";
+import ArrowRightIcon from "@/components/svg/ArrowRightIcon";
 
 interface GoResumeButtonProps {
   handleClick: () => void;

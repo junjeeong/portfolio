@@ -1,5 +1,5 @@
-import HashTag from "@/app/components/HashTag";
 import Image from "next/image";
+import HashTag from "@/components/HashTag";
 
 const Memoji = ({ resumeButtonIsHover }: { resumeButtonIsHover: boolean }) => {
   return (

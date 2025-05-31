@@ -1,11 +1,12 @@
-import ProjectTag from "@/app/components/ProjectTag";
-import { projectInfoList } from "@/app/mock/project-info-list";
+import ProjectTag from "@/components/ProjectTag";
+import ShowDetailButton from "@/components/button/ShowDetailButton";
+import { projectDeatilInfo } from "@/mock/project-deatil-info";
 
 interface Params {
   project: string;
 }
 
-interface PrjectInfo {
+export interface ProjectInfo {
   imageUrl: string;
   title: string;
   description: string;
@@ -14,20 +15,22 @@ interface PrjectInfo {
   members: string;
   themeColor: string;
   features: string[];
-  stacks: string[];
+  stacks: {
+    [key: string]: string;
+  };
   troubles: {
-    problem: string;
-    progress: string;
-    result: string;
-  }[];
+    [key: number]: {
+      problem: string;
+      progress: string;
+      result: string;
+    };
+  };
 }
 
 const ProjectPage = ({ params }: { params: Params }) => {
   const { project } = params;
 
-  const info: PrjectInfo = projectInfoList.find(
-    (el) => el.title.toLocaleLowerCase() === project,
-  );
+  const info: ProjectInfo = projectDeatilInfo[project];
 
   const {
     title,
@@ -82,27 +85,41 @@ const ProjectPage = ({ params }: { params: Params }) => {
           </section>
           <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold ">🛠️ 기술 스택</h2>
-            <p className="text-base font-light">
-              {stacks.map((el, index) => (
-                <li key={index}>{el}</li>
+            <ul className="text-base font-light">
+              {Object.keys(stacks).map((stack, index) => (
+                <li key={index} className="mt-1">
+                  <ShowDetailButton
+                    mode="stacks"
+                    title={stack}
+                    content={stacks[stack]}
+                  />
+                </li>
               ))}
-            </p>
+            </ul>
           </section>
 
-          <section className="flex flex-col gap-2">
+          {/* <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold ">✨ 기여한 작업</h2>
-            {troubles.map((el, index) => (
-              <div>아 모르겠따</div>
-              // ???
-            ))}
-          </section>
+            <p>
+              <ul>
+               
+              </ul>
+            </p>
+          </section> */}
 
           <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold ">🚀 Trouble Shooting</h2>
-            {troubles.map((el, index) => (
-              <div>아 모르겠따</div>
-              // ??
-            ))}
+            <ul>
+              {Object.keys(troubles).map((trouble, index) => (
+                <li key={index}>
+                  <ShowDetailButton
+                    mode="shootings"
+                    title={trouble}
+                    content={troubles[trouble]}
+                  />
+                </li>
+              ))}
+            </ul>
           </section>
         </div>
       </section>

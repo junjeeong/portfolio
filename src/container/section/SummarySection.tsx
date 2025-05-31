@@ -1,10 +1,10 @@
 "use client";
 
-import { useInView } from "@/app/hook/useInView";
 import clsx from "clsx";
-import Skills from "@/app/components/Skills";
-import MemojiBadge from "@/app/container/MemojiBadge";
-import InterviewSection from "@/app/container/section/InterviewSection";
+import Skills from "@/components/Skills";
+import MemojiBadge from "@/container/MemojiBadge";
+import InterviewSection from "@/container/section/InterviewSection";
+import { useInView } from "@/hook/useInView";
 
 const SummarySection = () => {
   const { ref, isInView } = useInView({
@@ -24,7 +24,7 @@ const SummarySection = () => {
         ref={ref}
         className={clsx(
           "flex flex-col items-center w-full p-14 transition-all duration-1000 ease-out",
-          isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40"
+          isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40",
         )}
       >
         <div className="max-w-[900px] w-full flex flex-col gap-20 mt-14">

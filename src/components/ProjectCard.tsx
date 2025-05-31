@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import ProjectTag from "@/app/components/ProjectTag";
-import GoDetailCover from "@/app/container/GoDetailCover";
+import ProjectTag from "@/components/ProjectTag";
+import GoDetailCover from "@/container/GoDetailCover";
 
 interface ProjectCardProps {
   imageUrl?: string;

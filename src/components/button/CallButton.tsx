@@ -1,5 +1,5 @@
-import FloatingButton from "@/app/components/button/FloatingButton";
-import PhoneIcon from "@/app/components/svg/PhoneIcon";
+import FloatingButton from "@/components/button/FloatingButton";
+import PhoneIcon from "@/components/svg/PhoneIcon";
 
 const CallButton = () => {
   return (

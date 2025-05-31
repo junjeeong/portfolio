@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FloatingButtons from "@/app/components/FloatingButtons";
+import FloatingButtons from "@/components/FloatingButtons";
 import "./globals.css";
 
 export const metadata: Metadata = {

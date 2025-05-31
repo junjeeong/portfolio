@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import clsx from "clsx";
-import MainCategory from "@/app/container/MainCategory";
-import ArticleSection from "@/app/container/section/ArticleSection";
-import CareerSection from "@/app/container/section/CareerSection";
-import ProjectSection from "@/app/container/section/ProjectSection";
-import { useInView } from "@/app/hook/useInView";
-import { projectInfoList } from "@/app/mock/project-info-list";
+import MainCategory from "@/container/MainCategory";
+import ArticleSection from "@/container/section/ArticleSection";
+import CareerSection from "@/container/section/CareerSection";
+import ProjectSection from "@/container/section/ProjectSection";
+import { useInView } from "@/hook/useInView";
 
-const Project = () => {
+const MainSection = () => {
   const [isSelected, setIsSelected] = useState({
     project: true,
     career: false,
@@ -41,7 +40,7 @@ const Project = () => {
         )}
         ref={ref}
       >
-        {isSelected.project && <ProjectSection list={projectInfoList} />}
+        {isSelected.project && <ProjectSection />}
         {isSelected.career && <CareerSection />}
         {isSelected.article && <ArticleSection />}
       </div>
@@ -49,4 +48,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default MainSection;

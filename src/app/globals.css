@@ -43,18 +43,23 @@ h2 {
   }
 }
 
-@keyframes center-to-up {
+@keyframes fadein-zoom {
   0% {
-    position: fixed;
-    left: 50%;
-    top: 46%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: scale(1.5);
   }
   100% {
-    position: fixed;
-    left: 50%;
-    top: 46%;
-    transform: translate(-50%, calc(-46% - 190px));
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes center-to-up {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, calc(-50% - 190px)) scale(0.7);
   }
 }
 
@@ -122,7 +127,7 @@ h2 {
 
 .fadein-bg {
   opacity: 0;
-  animation: fadein 2s 3s forwards;
+  animation: fadein-zoom 2s 3s forwards;
 }
 
 .fadein-profile {
@@ -131,7 +136,7 @@ h2 {
 }
 
 .center-to-up {
-  animation: center-to-up 1.5s ease-in-out forwards;
+  animation: center-to-up 1.5s ease-out forwards;
   animation-delay: 3s;
 }
 

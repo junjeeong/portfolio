@@ -1,5 +1,5 @@
-import FloatingButton from "@/app/components/button/FloatingButton";
-import ArrowUpIcon from "@/app/components/svg/ArrowUpIcon";
+import FloatingButton from "@/components/button/FloatingButton";
+import ArrowUpIcon from "@/components/svg/ArrowUpIcon";
 
 const ScrollUpButton = () => {
   return (
