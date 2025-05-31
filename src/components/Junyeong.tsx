@@ -4,7 +4,7 @@ const Junyeong = () => {
   return (
     <figure className="absolute bottom-0 flex justify-center fadein-profile w-screen max-w-[500px] h-[400px]">
       <Image
-        src={"/image/junyeong2.png"}
+        src={"/image/junyeong.jpeg"}
         fill
         alt="정준영 이미지"
         className="fadein-delay"
