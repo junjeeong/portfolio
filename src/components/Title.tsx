@@ -5,7 +5,7 @@ const Title = () => {
         <span className="text-6xl lg:text-[140px] font-[600] font-blinker text-white fadein-up md:text-8xl">
           No UX, No business
         </span>
-        <span className="block text-2xl font-light md:text-3xl lg:text-6xl fadein">
+        <span className="block text-2xl font-extralight font-pre md:text-3xl lg:text-6xl fadein ">
           프론트엔드 개발자 <strong>정준영</strong>입니다.
         </span>
       </h2>

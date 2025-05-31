@@ -5,7 +5,7 @@ const Header = () => {
     "py-1 px-2 border-b-2 border-b-black hover:bg-black transition-colors duration-500 hover:text-white";
 
   return (
-    <div className="fixed top-0 z-10 flex w-screen gap-5 p-6 fadein-delay">
+    <div className="absolute top-0 flex w-screen gap-5 p-6 fadein-delay">
       <Link
         href={"https://github.com/junjeeong"}
         target="_blank"
