@@ -8,9 +8,6 @@ const OutroSectoin = () => {
         <span className="block text-2xl font-extralight font-pre md:text-3xl lg:text-6xl">
           감사합니다.
         </span>
-        <p className="fixed text-sm font-bold text-white top-2 right-2">
-          Designed by <a href="https://github.com/jieun419">@JiEun</a>
-        </p>
       </h2>
     </section>
   );
