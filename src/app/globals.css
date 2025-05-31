@@ -14,10 +14,7 @@
 
 body {
   background-color: var(--background);
-  font-family:
-    "IBM Plex Sans KR",
-    "Pretendard",
-    "Blinker" "Geist";
+  font-family: "IBM Plex Sans KR", "Pretendard", "Blinker", "Geist", sans-serif;
 }
 
 h2 {
