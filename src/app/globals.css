@@ -29,7 +29,13 @@ b {
   font-weight: 700;
   padding: 4px;
   border-radius: 6px;
-  /* "bg-black font-white text-[16.96px] font-[700] py-[2px] px-1 m-[2px] rounded-sm"; */
+  margin: 2px;
+}
+
+@media (max-width: 768px) {
+  b {
+    font-size: 12px;
+  }
 }
 
 /* globals.css */

@@ -27,7 +27,7 @@ const ProjectCard = ({
 
   return (
     <article
-      className="relative w-[340px] h-[360px] bg-[#323232] p-5 flex flex-col rounded-[4px] ga-4"
+      className="relative w-[330px] h-[360px] bg-[#323232] sm:p-3 p-5 flex flex-col rounded-[4px]"
       onMouseOver={() => toggleHover(true)}
       onMouseLeave={() => toggleHover(false)}
     >

@@ -2,17 +2,19 @@ import Image from "next/image";
 
 const NoticeIsEmpty = () => {
   return (
-    <figure className="flex flex-col items-center w-full gap-4">
-      <Image
-        src="/image/sad.PNG"
-        width={400}
-        height={400}
-        alt="not-found logo"
-      />
-      <figcaption className="text-4xl font-bold text-white">
+    <div className="flex flex-col items-center sm:w-[calc(100vw-64px)] ">
+      <figure className="relative items-center w-[400px] h-[400px] gap-4">
+        <Image
+          src="/image/sad.PNG"
+          fill
+          className="object-cover"
+          alt="not-found logo"
+        />
+      </figure>
+      <span className="text-4xl font-bold text-white sm:text-xl">
         아직 구현한 프로젝트가 없습니다...ㅜ
-      </figcaption>
-    </figure>
+      </span>
+    </div>
   );
 };
 
