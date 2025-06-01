@@ -8,11 +8,11 @@ const Skills = () => {
     { name: "typescript", url: "/icon/typescript.svg" },
     { name: "react", url: "/icon/react.svg" },
     { name: "next", url: "/icon/next.png" },
-    { name: "tailwind-css", url: "/icon/tailwind-css.svg" },
+    { name: "tailwind", url: "/icon/tailwind-css.svg" },
     { name: "zustand", url: "/icon/zustand.svg" },
     { name: "jotai", url: "/icon/jotai.png" },
-    { name: "react-query", url: "/icon/react-query.svg" },
-    { name: "github", url: "/icon/github.svg" },
+    { name: "tanstackQuery", url: "/icon/react-query.svg" },
+    { name: "githubActions", url: "/icon/github.svg" },
   ];
 
   return (

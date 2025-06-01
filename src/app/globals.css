@@ -77,6 +77,24 @@ b {
   }
 }
 
+@keyframes shake-scale {
+  0% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
+}
+
 @keyframes fadein-up-under {
   0% {
     opacity: 0;
@@ -175,4 +193,8 @@ b {
 
 .modal::backdrop {
   background: rgba(0, 0, 0, 0.7);
+}
+
+.shake-scale-hover:hover img {
+  animation: shake-scale 0.6s infinite ease-in-out;
 }
