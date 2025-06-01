@@ -2,8 +2,7 @@ export const allProjectDeatilInfo = {
   mbtips: {
     imageUrl: "/logo/mbtips.svg",
     title: "Mbtips",
-    description: `네이버 클로바를 이용한 AI 생성형 챗봇 플랫폼입니다.
-    상대방과의 관계, mbti를 설정할 수 있으며 어떤 주제로 대화를 나누면 좋을지 추천해 줍니다.`,
+    description: `네이버 클로바를 이용한 AI 생성형 챗봇 플랫폼입니다. 상대방과의 관계, mbti를 설정할 수 있으며 어떤 주제로 대화를 나누면 좋을지 추천해 줍니다.`,
     tags: ["팀", "반응형", "CRA", "Naver Clova"],
     duration: "2025.02 ~ 2025.05",
     members: "6인(기획자 1명, 디자이너 1명, 백엔드 2명, 프론트 2명)",

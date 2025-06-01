@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import clsx from "clsx";
 
 const ShowDetailButton = ({
   mode,
@@ -25,27 +26,34 @@ const ShowDetailButton = ({
         className="w-full h-[40px] flex items-center bg-[#efeff1] hover:bg-[#efeff1b4] gap-1 transition-colors duration-75 py-2 px-3"
         onClick={handleToggle}
       >
-        <span className={modeIsShooting ? "text-sm" : "text-[8px]"}>
+        <span className={modeIsShooting ? "text-sm " : "text-[8px]"}>
           {modeIsShooting ? "✨" : isOpen ? "▼" : "▶︎"}
         </span>
-        <span className="text-start text-base font-[500] font-blinker flex-1">
+        <span
+          className={clsx(
+            "text-start text-base font-[500] font-blinker flex-1",
+            modeIsShooting ? "sm:text-xs" : "",
+          )}
+        >
           {title}
         </span>
       </button>
       {isOpen &&
         (!modeIsShooting ? (
-          <p className="w-full px-3 py-2 text-base font-light">{content}</p>
+          <p className="w-full px-3 py-2 text-base font-light sm:text-sm">
+            {content}
+          </p>
         ) : (
           <>
-            <p className="w-full px-3 py-2 text-base font-light">
+            <p className="w-full px-3 py-2 text-base font-light sm:text-sm">
               <strong className="font-semibold">[문제]</strong>{" "}
               {content.problem}
             </p>
-            <p className="w-full px-3 py-2 text-base font-light">
+            <p className="w-full px-3 py-2 text-base font-light sm:text-sm">
               <strong className="font-semibold">[해결]</strong>{" "}
               {content.progress}
             </p>
-            <p className="w-full px-3 py-2 text-base font-light">
+            <p className="w-full px-3 py-2 text-base font-light sm:text-sm">
               <strong className="font-semibold">[결과]</strong> {content.result}
             </p>
           </>

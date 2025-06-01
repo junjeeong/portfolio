@@ -30,7 +30,7 @@ const MainSection = () => {
   };
 
   return (
-    <section className="relative flex items-center w-full h-auto p-8 md:gap-2 sm:flex-col lg:gap-14 lg:p-14 sm:items-center">
+    <section className="relative flex items-center w-full h-auto p-8 md:gap-2 sm:flex-col gap-14 lg:p-14 sm:items-center">
       <MainCategory isSelected={isSelected} handleSelect={handleSelect} />
 
       <div

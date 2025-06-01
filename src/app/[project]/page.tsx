@@ -63,15 +63,15 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
         <h1 className="text-5xl font-semibold text-white font-white font-blinker">
           {title}
         </h1>
-        <p className="flex gap-4 text-xs text-white">
+        <p className="flex text-xs text-white lg:gap-4 sm:flex-col sm:items-center ">
           <span>{duration}</span>
           <span>{members}</span>
         </p>
       </section>
 
-      <section className="flex flex-col max-w-[900px] flex-1 w-full h-auto p-16 bg-white font-light text-lg">
+      <section className="flex flex-col max-w-[900px] flex-1 w-full h-auto p-16 bg-white font-light text-lg sm:text-sm">
         <section className="flex flex-col whitespace-pre-line">
-          <p className="self-center text-center">{description}</p>
+          <p className="self-center text-center ">{description}</p>
 
           {/* divider */}
           <div className="w-full my-10 border" />
@@ -80,7 +80,7 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
         <div className="flex flex-col gap-10">
           <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold ">🧑‍💻 주요 기능</h2>
-            <p className="text-base font-light">
+            <p className="text-base font-light sm:text-sm">
               {features.map((el, index) => (
                 <li key={index}>{el}</li>
               ))}
