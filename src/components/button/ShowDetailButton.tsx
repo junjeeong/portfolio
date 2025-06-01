@@ -8,7 +8,6 @@ const ShowDetailButton = ({
   mode,
   title,
   content,
-  themeColor,
 }: {
   mode?: "stacks" | "contributes" | "shootings";
   title: string;

@@ -120,7 +120,6 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
                     mode="shootings"
                     title={trouble}
                     content={troubles[trouble]}
-                    themeColor={themeColor}
                   />
                 </li>
               ))}
