@@ -115,7 +115,7 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
             <h2 className="text-2xl font-semibold ">🚀 Trouble Shooting</h2>
             <ul>
               {Object.keys(troubles).map((trouble, index) => (
-                <li key={index}>
+                <li key={index} className="mt-1">
                   <ShowDetailButton
                     mode="shootings"
                     title={trouble}

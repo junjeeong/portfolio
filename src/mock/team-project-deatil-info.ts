@@ -32,7 +32,6 @@ export const teamProjectDeatilInfo = {
           "각 페이지의 상태를 독립적으로 관리할 수 있도록 navigate.state 대신 URL 기반의 동적 파라미터 구조로 개선함",
         result:
           "사용자가 원활하게 페이지를 공유받을 수 있게 됨 UX 상승, 개발자가 페이지 컴포넌트의 상태를 번거롭게 추적할 일이 없어지기에 개발의 편의성 및 유지보수성 증가",
-        link: "https://velog.io/@wn8624/posts",
       },
       "데이터 기반 사용자 행동 분석을 통한 UX 개선": {
         problem:
@@ -41,7 +40,6 @@ export const teamProjectDeatilInfo = {
           "실제 사용자의 행동을 파악하기 위해 G4 React 라이브러리를 활용해 click/view 이벤트를 태깅하고, 설문조사를 병행하여 사용자 불편 요소를 실질적인 데이터로 분석함.",
         result:
           "데이터 기반 분석을 통해 사용자 이탈 지점을 명확히 파악하고, UI 개선으로 클릭률 및 전환율 향상 유도.",
-        link: "https://velog.io/@wn8624/posts",
       },
     },
   },
@@ -122,23 +120,41 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
         "무한 스크롤 상태와 유저 편집 권한 정보를 전역에서 다루기 위해, 가볍고 선언적인 전역 상태 관리 도구인 Zustand를 활용했습니다.",
     },
     troubles: {
-      "TanStack Query 기반 캐싱으로 비동기 요청 최적화": {
+      "에러 핸들링 강화로 명확한 사용자 피드백 제공": {
         problem:
-          "비동기 요청이 반복적으로 발생하면서, 사용자에게 대체 UI가 자주 노출되는 문제가 발생",
+          "서버에서 404, 500 오류 발생 시 사용자에게 안내가 없어 혼란 발생",
         progress:
-          "Tanstacks Query의 useQuery 메서드를 활용해 기존 fetch 요청을 캐싱된 데이터로 대체",
+          "에러 코드를 감지해 Next.js의 404.tsx, 500.tsx 등으로 리다이렉션",
         result:
-          "평균 1.2초 소요되던 중복 API 요청이 제거되어 재방문 시 콘텐츠가 즉시 표시되었고, 사용자 체감 속도가 개선됨",
-        link: "https://velog.io/@wn8624/Tanstack-Query%EB%A1%9C-%EC%A4%91%EB%B3%B5-API-%EC%A0%9C%EA%B1%B0-%EB%B0%8F-UX-%EC%A7%80%EC%97%B0-1.2s-0s-%EA%B0%9C%EC%84%A0%ED%95%9C-%EC%82%AC%EB%A1%80",
+          "사용자에게 오류 상황을 명확히 전달하고, 빠르게 대처할 수 있는 UX 제공",
+        link: "https://velog.io/@wn8624/HTTP-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EA%B8%B0%EB%B0%98-UI-%EB%B6%84%EA%B8%B0-%EC%B2%98%EB%A6%AC-%EC%9C%84%ED%95%9C-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%9B%85-%EC%84%A4%EA%B3%84-%EC%9E%91%EC%97%85",
       },
-      "Frontend-Fundamentals 기반 구조 개선으로 가독성 향상": {
+      "HttpOnly 쿠키 기반 인증 전환으로 XSS/CSRF 보안 강화": {
         problem:
-          "페이지 컴포넌트가 상태와 JSX를 함께 관리하면서 로직이 복잡해지고 가독성이 저하된 상황",
+          "AccessToken과 RefreshToken을 로컬 스토리지에 저장해, XSS로 인한 노출 위험 발생",
         progress:
-          "토스팀에서 제시한 Frontend-Fundamentals 클린코드 가이드를 바탕으로 리팩터링을 진행",
+          "로그인 시 토큰을 HttpOnly 쿠키에 저장하고, 인증 처리는 서버 API Route에서 Proxy 방식으로 수행",
         result:
-          "상태는 Hook이, 페이지는 UI만 담당하도록 구조 개선 → 유지보수성과 가독성 향상, DX 개선",
-        link: "https://velog.io/@wn8624/JSX-%EB%B6%84%EB%A6%AC%EC%99%80-%EC%83%81%ED%83%9C-%EC%B6%94%EC%83%81%ED%99%94%EB%A1%9C-DX-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0with-Frontend-Fundamentals",
+          "클라이언트에서 토큰 접근을 차단하고 서버 중심 처리로 전환하여 XSS/CSRF 보안 강화",
+        link: "https://velog.io/@wn8624/XSSCSRF-%EB%8C%80%EC%9D%91%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%95%88%EC%A0%84%ED%95%9C-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84-%EC%84%A4%EA%B3%84-with.-Next.js-API-Route",
+      },
+      "관심사 분리를 통한 함수의 가독성과 결합도 개선 작업": {
+        problem:
+          "무한스크롤 기능을 관리하고자 했던 useInfiniteScroll 훅이 상태 관리와 IntersectionObserver 로직까지 동시에 처리하면서 오히려 함수의 역할이 모호해지고, 예측 가능성과 유지보수성이 저하된 상황",
+        progress:
+          "페이지 컴포넌트가 필요한 상태 관리는 useListState 훅으로, 뷰포트 감지 로직은 useInfiniteScroll 훅으로 더 명확히 분리해 줌으로써, 각자 하나의 책임만 갖도록 구조 개선",
+        result:
+          "각 훅의 역할이 명확해지면서 코드의 가독성과 재사용성이 향상되었고, 결합도가 낮아져 전반적인 확장성과 유지보수성이 개선됨",
+        link: "https://velog.io/@wn8624/Refactor-useInfiniteScroll-%EA%B4%80%EC%8B%AC%EC%82%AC-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0",
+      },
+      "사용자 입력 에러에 대한 UX 중심의 에러 핸들링 개선": {
+        problem:
+          "사용자 입력 오류 상황에서 정확한 피드백이 부족하여, 사용자 경험이 저해되고 페이지 이탈율이 증가하는 가능성이 존재함",
+        progress:
+          "사용자 입력 요소에서 지켜야 하는 규칙들(실시간 유효성 검사, 명확한 에러 메시지, 입력 형식 가이드, 유효성 검사)을 정의하고 버튼에 적용하여 에러에 대한 피드백을 보다 정밀히 함",
+        result:
+          "사용자 입력 오류에 대한 피드백이 즉각적이고 명확해져 UX가 개선되었고, 코드 상에서도 `react-hook-form`을 활용한 정교한 검증 로직으로 신뢰성과 유지보수성이 향상됨",
+        link: "https://velog.io/@wn8624/Refactoring-%EC%97%90%EB%9F%AC-%ED%95%B8%EB%93%A4%EB%A7%81-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0-part2-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%9E%85%EB%A0%A5-%EC%97%90%EB%9F%AC",
       },
     },
   },
@@ -170,23 +186,32 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
         "무한 스크롤 상태와 유저 편집 권한 정보를 전역에서 다루기 위해, 가볍고 선언적인 전역 상태 관리 도구인 Zustand를 활용했습니다.",
     },
     troubles: {
-      "에러 핸들링 강화로 명확한 사용자 피드백 제공": {
+      "TanStack Query 기반 캐싱으로 비동기 요청 최적화": {
         problem:
-          "서버에서 404, 500 오류 발생 시 사용자에게 안내가 없어 혼란 발생",
+          "비동기 요청이 반복적으로 발생하면서, 사용자에게 대체 UI가 자주 노출되는 문제가 발생",
         progress:
-          "에러 코드를 감지해 Next.js의 404.tsx, 500.tsx 등으로 리다이렉션",
+          "Tanstacks Query의 useQuery 메서드를 활용해 기존 fetch 요청을 캐싱된 데이터로 대체",
         result:
-          "사용자에게 오류 상황을 명확히 전달하고, 빠르게 대처할 수 있는 UX 제공",
-        link: "https://velog.io/@wn8624/HTTP-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EA%B8%B0%EB%B0%98-UI-%EB%B6%84%EA%B8%B0-%EC%B2%98%EB%A6%AC-%EC%9C%84%ED%95%9C-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%9B%85-%EC%84%A4%EA%B3%84-%EC%9E%91%EC%97%85",
+          "평균 1.2초 소요되던 중복 API 요청이 제거되어 재방문 시 콘텐츠가 즉시 표시되었고, 사용자 체감 속도가 개선됨",
+        link: "https://velog.io/@wn8624/Tanstack-Query%EB%A1%9C-%EC%A4%91%EB%B3%B5-API-%EC%A0%9C%EA%B1%B0-%EB%B0%8F-UX-%EC%A7%80%EC%97%B0-1.2s-0s-%EA%B0%9C%EC%84%A0%ED%95%9C-%EC%82%AC%EB%A1%80",
       },
-      "HttpOnly 쿠키 기반 인증 전환으로 XSS/CSRF 보안 강화": {
+      "Frontend-Fundamentals 가이드를 바탕으로 한 클린코드 작업": {
         problem:
-          "AccessToken과 RefreshToken을 로컬 스토리지에 저장해, XSS로 인한 노출 위험 발생",
+          "페이지 컴포넌트가 상태와 JSX를 함께 관리하면서 로직이 복잡해지고 가독성이 저하된 상황",
         progress:
-          "로그인 시 토큰을 HttpOnly 쿠키에 저장하고, 인증 처리는 서버 API Route에서 Proxy 방식으로 수행",
+          "토스팀에서 제시한 Frontend-Fundamentals 클린코드 가이드를 바탕으로 리팩터링을 진행",
         result:
-          "클라이언트에서 토큰 접근을 차단하고 서버 중심 처리로 전환하여 XSS/CSRF 보안 강화",
-        link: "https://velog.io/@wn8624/XSSCSRF-%EB%8C%80%EC%9D%91%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%95%88%EC%A0%84%ED%95%9C-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84-%EC%84%A4%EA%B3%84-with.-Next.js-API-Route",
+          "상태는 Hook이, 페이지는 UI만 담당하도록 구조 개선 → 유지보수성과 가독성 향상, DX 개선",
+        link: "https://velog.io/@wn8624/JSX-%EB%B6%84%EB%A6%AC%EC%99%80-%EC%83%81%ED%83%9C-%EC%B6%94%EC%83%81%ED%99%94%EB%A1%9C-DX-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0with-Frontend-Fundamentals",
+      },
+      "Loading indicator 줄이는 작업을 통한 UX 개선 작업": {
+        problem:
+          "여러 페이지에서 잦은 로딩 인디케이터 노출로 사용자 경험이 저하되고, 동일한 요청이 반복되며 네트워크 낭비가 발생하는 상황",
+        progress:
+          "단순 페이지 이동에는 router.push 대신 Link 컴포넌트로 전환하여 프리패칭 기능을 활용하고, 반복되는 fetch 요청은 캐싱 전략 도입(Tanstack Query 등)을 통해 중복 요청 방지 방향을 검토",
+        result:
+          "페이지 전환 속도가 개선되어 불필요한 스피너 노출이 줄었고, 동일 요청 반복 시 캐싱 전략을 적용할 수 있는 구조를 설계하여 UX와 성능 측면 모두 향상",
+        link: "https://velog.io/@wn8624/Refactoring-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EA%B2%BD%ED%97%98%ED%95%98%EB%8A%94-loading-indicator-%EC%A4%84%EC%9D%B4%EA%B8%B0",
       },
     },
   },
