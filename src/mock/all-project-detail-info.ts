@@ -32,6 +32,7 @@ export const allProjectDeatilInfo = {
           "각 페이지의 상태를 독립적으로 관리할 수 있도록 navigate.state 대신 URL 기반의 동적 파라미터 구조로 개선함",
         result:
           "사용자가 원활하게 페이지를 공유받을 수 있게 됨 UX 상승, 개발자가 페이지 컴포넌트의 상태를 번거롭게 추적할 일이 없어지기에 개발의 편의성 및 유지보수성 증가",
+        link: "https://velog.io/@wn8624/posts",
       },
       "데이터 기반 사용자 행동 분석을 통한 UX 개선": {
         problem:
@@ -40,6 +41,7 @@ export const allProjectDeatilInfo = {
           "실제 사용자의 행동을 파악하기 위해 G4 React 라이브러리를 활용해 click/view 이벤트를 태깅하고, 설문조사를 병행하여 사용자 불편 요소를 실질적인 데이터로 분석함.",
         result:
           "데이터 기반 분석을 통해 사용자 이탈 지점을 명확히 파악하고, UI 개선으로 클릭률 및 전환율 향상 유도.",
+        link: "https://velog.io/@wn8624/posts",
       },
     },
   },
@@ -79,6 +81,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "HTTP 통신으로 인한 보안 경고 확인, 배포 시 SSL 적용으로 HTTPS로 전환",
         result:
           "Lighthouse 측정 결과, Best Practices를 포함한 모든 지표가 90점 이상으로 측정됨",
+        link: "https://velog.io/@wn8624/Lighthouse-%EB%B6%84%EC%84%9D%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%84%A0-%EC%9E%91%EC%97%85-%EC%A0%90%EC%88%98%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%9D%98%EB%AF%B8%EB%A5%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EB%8B%A4",
       },
       "App Router 구조 재정비를 통한 렌더링 성능 최적화": {
         problem:
@@ -87,6 +90,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "Hydration 최소화, Suspense 활용, 이미지 최적화 등 App Router의 강점 전반을 점검",
         result:
           "클라이언트 컴포넌트를 최소화하여 JS 번들 축소, Suspense로 FCP 개선, TTI 및 UX 향상",
+        link: "https://velog.io/@wn8624/Refactoring-Albaform%EC%9D%80-%EC%99%9C-App-router%EC%97%AC%EC%95%BC-%ED%96%88%EC%9D%84%EA%B9%8C",
       },
     },
   },
@@ -125,6 +129,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "Tanstacks Query의 useQuery 메서드를 활용해 기존 fetch 요청을 캐싱된 데이터로 대체",
         result:
           "평균 1.2초 소요되던 중복 API 요청이 제거되어 재방문 시 콘텐츠가 즉시 표시되었고, 사용자 체감 속도가 개선됨",
+        link: "https://velog.io/@wn8624/Tanstack-Query%EB%A1%9C-%EC%A4%91%EB%B3%B5-API-%EC%A0%9C%EA%B1%B0-%EB%B0%8F-UX-%EC%A7%80%EC%97%B0-1.2s-0s-%EA%B0%9C%EC%84%A0%ED%95%9C-%EC%82%AC%EB%A1%80",
       },
       "Frontend-Fundamentals 기반 구조 개선으로 가독성 향상": {
         problem:
@@ -133,6 +138,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "토스팀에서 제시한 Frontend-Fundamentals 클린코드 가이드를 바탕으로 리팩터링을 진행",
         result:
           "상태는 Hook이, 페이지는 UI만 담당하도록 구조 개선 → 유지보수성과 가독성 향상, DX 개선",
+        link: "https://velog.io/@wn8624/JSX-%EB%B6%84%EB%A6%AC%EC%99%80-%EC%83%81%ED%83%9C-%EC%B6%94%EC%83%81%ED%99%94%EB%A1%9C-DX-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0with-Frontend-Fundamentals",
       },
     },
   },
@@ -171,6 +177,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "에러 코드를 감지해 Next.js의 404.tsx, 500.tsx 등으로 리다이렉션",
         result:
           "사용자에게 오류 상황을 명확히 전달하고, 빠르게 대처할 수 있는 UX 제공",
+        link: "https://velog.io/@wn8624/HTTP-%EC%83%81%ED%83%9C-%EC%BD%94%EB%93%9C-%EA%B8%B0%EB%B0%98-UI-%EB%B6%84%EA%B8%B0-%EC%B2%98%EB%A6%AC-%EC%9C%84%ED%95%9C-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%9B%85-%EC%84%A4%EA%B3%84-%EC%9E%91%EC%97%85",
       },
       "HttpOnly 쿠키 기반 인증 전환으로 XSS/CSRF 보안 강화": {
         problem:
@@ -179,6 +186,7 @@ SPA 구조의 폼 작성 페이지에서는 이전 설정값 유지가 핵심 �
           "로그인 시 토큰을 HttpOnly 쿠키에 저장하고, 인증 처리는 서버 API Route에서 Proxy 방식으로 수행",
         result:
           "클라이언트에서 토큰 접근을 차단하고 서버 중심 처리로 전환하여 XSS/CSRF 보안 강화",
+        link: "https://velog.io/@wn8624/XSSCSRF-%EB%8C%80%EC%9D%91%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%95%88%EC%A0%84%ED%95%9C-%EC%9D%B8%EC%A6%9D-%ED%9D%90%EB%A6%84-%EC%84%A4%EA%B3%84-with.-Next.js-API-Route",
       },
     },
   },

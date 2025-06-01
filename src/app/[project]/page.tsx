@@ -26,6 +26,7 @@ export interface ProjectInfo {
       problem: string;
       progress: string;
       result: string;
+      link: string;
     };
   };
 }
@@ -119,6 +120,7 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
                     mode="shootings"
                     title={trouble}
                     content={troubles[trouble]}
+                    themeColor={themeColor}
                   />
                 </li>
               ))}

@@ -1,17 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 
 const ShowDetailButton = ({
   mode,
   title,
   content,
+  themeColor,
 }: {
   mode?: "stacks" | "contributes" | "shootings";
   title: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   content: any;
+  themeColor?: string;
 }) => {
   const modeIsShooting = mode === "shootings";
   const [isOpen, setIsOpen] = useState(mode !== "stacks" ? true : false);
@@ -55,6 +58,15 @@ const ShowDetailButton = ({
             </p>
             <p className="w-full px-3 py-2 text-base font-light sm:text-sm">
               <strong className="font-semibold">[결과]</strong> {content.result}
+            </p>
+            <p className="w-full px-3 py-2 text-base font-light sm:text-sm hover:text-green-200">
+              <Link
+                className="font-semibold"
+                href={content.link}
+                target="_blank"
+              >
+                회고록 보러 가기
+              </Link>
             </p>
           </>
         ))}
