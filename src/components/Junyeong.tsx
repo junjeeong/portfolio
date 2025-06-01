@@ -10,7 +10,7 @@ const Junyeong = () => {
         className="fadein-delay"
       />
 
-      <span className="absolute w-full sm:text-[clamp(14px,2vw,28px)] font-light text-center -translate-x-1/2 -top-20 left-1/2 lg:text-lg fadein">
+      <span className="absolute w-full sm:text-[14px] md:text-[18px] font-light text-center -translate-x-1/2 -top-20  left-1/2 lg:text-lg fadein">
         <span className="fadein-down">UX 없이는 비즈니스도 없다 믿기에,</span>
         <br />
         <span className="fadein-down-delay">

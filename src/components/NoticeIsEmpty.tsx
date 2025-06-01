@@ -11,7 +11,7 @@ const NoticeIsEmpty = () => {
           alt="not-found logo"
         />
       </figure>
-      <span className="text-4xl font-bold text-white sm:text-xl">
+      <span className="text-4xl font-bold text-white sm:text-xl h-28">
         아직 구현한 프로젝트가 없습니다...ㅜ
       </span>
     </div>

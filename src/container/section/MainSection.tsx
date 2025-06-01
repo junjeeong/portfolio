@@ -30,12 +30,12 @@ const MainSection = () => {
   };
 
   return (
-    <section className="relative flex items-center w-full h-auto sm:flex-col gap-14 p-14 sm:p-8 sm:items-center">
+    <section className="relative flex items-center w-full h-auto p-8 md:gap-2 sm:flex-col lg:gap-14 lg:p-14 sm:items-center">
       <MainCategory isSelected={isSelected} handleSelect={handleSelect} />
 
       <div
         className={clsx(
-          "w-[1200px] flex-col flex transition-all duration-700 ease-out self-start",
+          "w-full max-w-[1200px] flex-col flex transition-all duration-700 ease-out self-start",
           isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-40",
         )}
         ref={ref}

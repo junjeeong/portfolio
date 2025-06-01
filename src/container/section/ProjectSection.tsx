@@ -43,7 +43,7 @@ const ProjectSection = () => {
         handleSelect={selectProjectType}
       />
       {projectIsExist ? (
-        <div className="grid grid-cols-3 mt-8 sm:w-[calc(100vw-64px)] gap-y-6 justify-items-center sm:grid-cols-1 sm:grid-rows-1">
+        <div className="grid lg:grid-cols-3 mt-8 sm:w-[calc(100vw-64px)] gap-y-6 justify-items-center sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-2">
           {projectList.map((el, index) => (
             <ProjectCard key={index} {...allProjectDeatilInfo[el]} />
           ))}
