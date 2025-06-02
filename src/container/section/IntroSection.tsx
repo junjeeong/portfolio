@@ -7,7 +7,7 @@ import ArrowDownIcon from "@/components/svg/ArrowDownIcon";
 const IntroSection = () => {
   return (
     <>
-      <section className="relative flex flex-col items-center w-screen h-screen sm:h-[calc(100vh-60px)]">
+      <section className="relative flex flex-col items-center w-screen h-screen sm:h-[calc(100vh-84px)]">
         {/* 배경 레이어 */}
         <Background />
         {/* 콘텐츠 레이어 */}

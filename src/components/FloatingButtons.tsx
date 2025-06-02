@@ -4,7 +4,7 @@ import ScrollUpButton from "@/components/button/ScrollUpButton";
 
 const FloatingButtons = () => {
   return (
-    <div className="w-[50px] h-auto fixed z-10 flex flex-col gap-3 bottom-4 right-4 sm:bottom-[80px]">
+    <div className="w-[50px] h-auto fixed z-10 flex flex-col gap-3 bottom-4 right-4 ">
       <CallButton />
       <MailButton />
       <ScrollUpButton />
