@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const NoticeIsEmpty = () => {
+const NotExistProject = () => {
   return (
-    <div className="flex flex-col items-center mt-20 sm:h-screen">
+    <div className="flex flex-col items-center sm:mt-20 sm:h-screen">
       <figure className="relative items-center w-[400px] h-[400px] gap-4">
         <Image
           src="/image/sad.jpeg"
@@ -18,4 +18,4 @@ const NoticeIsEmpty = () => {
   );
 };
 
-export default NoticeIsEmpty;
+export default NotExistProject;

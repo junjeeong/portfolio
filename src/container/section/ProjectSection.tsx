@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import NoticeIsEmpty from "@/components/NoticeIsEmpty";
+import NotExistProject from "@/components/NotExistProject";
 import ProjectCard from "@/components/ProjectCard";
 import ContentTypeFilter from "@/components/button/ContentTypeFilter";
 import { allProjectDeatilInfo } from "@/mock/all-project-detail-info";
@@ -49,7 +49,7 @@ const ProjectSection = () => {
           ))}
         </div>
       ) : (
-        <NoticeIsEmpty />
+        <NotExistProject />
       )}
     </section>
   );

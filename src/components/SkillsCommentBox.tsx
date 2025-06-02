@@ -10,7 +10,7 @@ const SkillsCommentBox = ({ skill }: { skill: string }) => {
     <div
       className={clsx(
         "absolute p-4 bg-[#323232] rounded-lg shadow-md w-[250px] h-[170px] -right-[200px] -top-[180px] z-10 ",
-        isMobileRightItems ? "right-0" : "",
+        isMobileRightItems ? "sm:right-0" : "",
       )}
     >
       <ul>
