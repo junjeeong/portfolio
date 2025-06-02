@@ -1,4 +1,4 @@
-import ProjectPage from "@/app/[project]/page";
+import ProjectDetailPage from "@/app/[project]/page";
 import Modal from "@/container/modal/Modal";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 const ModalPage = (props: Props) => {
   return (
     <Modal>
-      <ProjectPage {...props} />
+      <ProjectDetailPage {...props} />
     </Modal>
   );
 };

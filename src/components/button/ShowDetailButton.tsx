@@ -34,7 +34,7 @@ const ShowDetailButton = ({
         <span
           className={clsx(
             "text-start text-base font-[500] font-blinker flex-1",
-            modeIsShooting ? "sm:text-xs" : "",
+            modeIsShooting ? "sm:text-sm" : "",
           )}
         >
           {title}

@@ -31,7 +31,7 @@ export interface ProjectInfo {
   };
 }
 
-const ProjectPage: FC<PageProps> = async ({ params }) => {
+const ProjectDetailPage: FC<PageProps> = async ({ params }) => {
   const { project } = params;
 
   const info: ProjectInfo = teamProjectDeatilInfo[project];
@@ -131,4 +131,4 @@ const ProjectPage: FC<PageProps> = async ({ params }) => {
   );
 };
 
-export default ProjectPage;
+export default ProjectDetailPage;

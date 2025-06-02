@@ -16,9 +16,9 @@ const Skills = () => {
   ];
 
   return (
-    <div>
-      <h3 className="text-4xl text-white text-blinker">Skills</h3>
-      <div className="w-[500px] sm:w-[280px] grid sm:grid-rows-3 sm:grid-cols-3 grid-rows-2 grid-cols-6 gap-y-4 mt-8">
+    <div className="flex flex-col items-center">
+      <h3 className="self-start text-4xl text-white text-blinker">Skills</h3>
+      <div className="w-[500px] sm:w-[280px]  grid sm:grid-rows-3 sm:grid-cols-3 grid-rows-2 grid-cols-6 gap-y-4 mt-8">
         {stack.map((el, index) => (
           <SkillsItem key={index} logo={el} />
         ))}
