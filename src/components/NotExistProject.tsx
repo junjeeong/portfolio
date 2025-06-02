@@ -1,13 +1,11 @@
-import Image from "next/image";
-
 const NotExistProject = () => {
   return (
     <div className="flex flex-col items-center sm:mt-20 sm:h-screen">
-      <figure className="relative items-center w-[400px] h-[400px] gap-4">
-        <Image
+      <figure className="relative items-center gap-4">
+        <img
+          width={400}
+          height={400}
           src="/image/sad.jpeg"
-          fill
-          className="object-cover"
           alt="not-found logo"
         />
       </figure>
