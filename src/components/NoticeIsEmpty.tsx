@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const NoticeIsEmpty = () => {
   return (
-    <div className="flex flex-col items-center sm:w-[calc(100vw-64px)] ">
+    <div className="flex flex-col items-center mt-20 sm:h-screen">
       <figure className="relative items-center w-[400px] h-[400px] gap-4">
         <Image
-          src="/image/sad.PNG"
+          src="/image/sad.jpeg"
           fill
           className="object-cover"
           alt="not-found logo"
